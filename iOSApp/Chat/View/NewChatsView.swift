@@ -20,6 +20,7 @@ struct NewChatsView: View {
             }
             .navigationBarTitle(Text("New Chat"), displayMode: .inline)
         }
+        .accentColor(.black)
         .onAppear {
             self.session.fetchUsers(isSavedUsers: true)
         }
